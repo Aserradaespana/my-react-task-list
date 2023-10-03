@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #252541;
+  }
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.MyTask {
+  color: #F2E9E4;
+  text-overflow: ellipsis;
+  font-family: fantasy;
+}
+
+.Task-container {
+  display: flex;
+  border: 1px solid #9A8C98;
+  border-radius: 10px;
+  width: 500px;
+  background-color: #4A4E69;
+  margin: 5px 0;
+  padding: 8px 15px 8px 20px;
+  justify-content: space-between;
+  align-items:flex-end;
+  cursor: pointer;
+  min-height: 50px;
+}
+.Icon-complete, 
+Icon-delete{
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+ 
+}
+
+/* Task Complete */
+
+.Task-container.complete {
+  background-color: rgb(103, 41, 153);
+  text-decoration: line-through;
+}
+
+/* Task form */
+
+.Task-Form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.Task-input {
+  background-color: #9A8C98;
+  width: 350px;
+  font-size: 18px;
+  border-radius: 4px 4px;
+  border: 2px solid #564D55; 
+  padding: 15px 32px 15px 15px;
+  outline: none;
+}
+/* Boton para agregar las tareas */
+
+.Task-button {
+  background-color: #F2E9E4;
+  color: #9A8C98;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: capitalize;
+  border: none;
+  border-radius: opx 5px 5px 0px;
+  padding: 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* TodoList */
+
+.Task-list-container {
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
